@@ -1,3 +1,14 @@
-# Sixgweb Plugin Documentation
+---
+layout: home
 
-Documentation for OctoberCMS plugins developed by 6G Web.
+hero:
+  name: Sixgweb Documentation
+  tagline: Select a Plugin Below to View the Documentation
+  actions:
+    - theme: alt
+      text: Attributize Documentation
+      link: /attributize/
+    - theme: alt
+      text: Conditions Documentation
+      link: /conditions/
+---

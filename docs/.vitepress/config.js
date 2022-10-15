@@ -1,11 +1,63 @@
 export default {
-    base: '/oc-plugin-documentation',
+    base: '/oc-plugin-documentation/',
     title: 'Sixgweb Documenation',
+    appearance: true,
     themeConfig: {
         siteTitle: false,
+        logo: {
+            light: '/images/logo-horizontal-blue.png',
+            dark: '/images/logo-horizontal-yellow.png',
+        },
         nav: [
-            { text: 'Attributize', link: '/attributize/', activeMatch: '/attributize/' },
-            { text: 'Conditions', link: '/conditions/', activeMatch: '/conditions/' },
+            {
+                text: 'Attributize',
+                activeMatch: '/attributize/',
+                items: [
+                    {
+                        text: 'Documentation',
+                        link: '/attributize/',
+                    },
+                    {
+                        text: 'Integrations',
+                        items: [
+                            {
+                                text: 'RainLab.User',
+                                link: '/attributizeusers/',
+                            },
+                            {
+                                text: 'RainLab.Location',
+                                link: '/attributizelocation/',
+                            }
+                        ],
+                    },
+                ]
+            },
+            {
+                text: 'Conditions',
+                activeMatch: '/conditions/',
+                items: [
+                    {
+                        text: 'Documentation',
+                        link: '/conditions/',
+                    },
+                    {
+                        text: 'Integrations',
+                        items: [
+                            {
+                                text: 'Sixgweb.Attributize',
+                                link: '/conditionsattributize/',
+                                activeMatch: '/conditionsattributize/',
+                            },
+                            {
+                                text: 'RainLab.User',
+                                link: '/conditionsusers/',
+                                activeMatch: '/conditionsusers/',
+                            }
+                        ],
+                    },
+                ]
+
+            },
         ],
         sidebar: {
             '/attributize/': [
@@ -14,6 +66,7 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/attributize/' },
                         { text: 'Installation', link: '/attributize/installation' },
+                        { text: 'FAQ', link: '/attributize/faq' },
                     ]
                 },
                 {
@@ -25,8 +78,8 @@ export default {
                             link: '/attributize/usage/editor',
                             items: [
                                 {
-                                    text: 'Configuration Tab',
-                                    link: '/attributize/usage/editor/tabs/configuration'
+                                    text: 'Field Tab',
+                                    link: '/attributize/usage/editor/tabs/field'
                                 },
                                 {
                                     text: 'Validation Tab',
@@ -39,6 +92,10 @@ export default {
                                 {
                                     text: 'Dependency Tab',
                                     link: '/attributize/usage/editor/tabs/dependency'
+                                },
+                                {
+                                    text: 'Settings Tab',
+                                    link: '/attributize/usage/editor/tabs/settings'
                                 },
                             ],
                         },
@@ -69,26 +126,28 @@ export default {
                 {
                     text: 'Integrations',
                     items: [
-                        { text: 'RainLab User', link: '/attributize/integrations/rainlab-user' },
-                        { text: 'RainLab Location', link: '/attributize/integrations/rainlab-location' },
-                        { text: 'RainLab Translate', link: '/attributize/integrations/rainlab-translate' },
+                        { text: 'RainLab User', link: '/attributizeusers/' },
+                        { text: 'RainLab Location', link: '/attributizelocation/' },
                         {
                             text: 'Build Your Own',
                             link: '/attributize/integrations/build-your-own',
-                            items: [
-                                {
-                                    text: 'Methodology',
-                                    link: '/attributize/integrations/build-your-own/methodology',
-                                },
-                                {
-                                    text: 'Behaviors',
-                                    link: '/attributize/integrations/build-your-own/behaviors',
-                                },
-                                {
-                                    text: 'Events',
-                                    link: '/attributize/integrations/build-your-own/events',
-                                }
-                            ]
+                        },
+                    ]
+                },
+                {
+                    text: 'API',
+                    items: [
+                        {
+                            text: 'Behaviors',
+                            link: '/attributize/api/behaviors',
+                        },
+                        {
+                            text: 'Events',
+                            link: '/attributize/api/events',
+                        },
+                        {
+                            text: 'Event Handler',
+                            link: '/attributize/api/eventhandler',
                         },
                     ]
                 },
@@ -99,6 +158,7 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/conditions/' },
                         { text: 'Installation', link: '/conditions/installation' },
+                        { text: 'FAQ', link: '/conditions/faq' },
                     ]
                 },
                 {
@@ -110,27 +170,89 @@ export default {
                     ]
                 },
                 {
+                    text: 'Use Cases',
+                    items: [
+                        {
+                            text: 'User Group Based Fields',
+                            link: '/conditions/use-cases/user-group-based-fields',
+                        }
+                    ],
+                },
+                {
                     text: 'Integrations',
                     items: [
-                        { text: 'Sixgweb.Attrbituzize', link: '/conditions/integrations/sixgweb-attributize' },
-                        { text: 'RainLab.User', link: '/conditions/integrations/rainlab-user' },
+                        { text: 'Sixgweb.Attrbituzize', link: '/conditionsattributize/' },
+                        { text: 'RainLab.User', link: '/conditionsusers/' },
                         {
                             text: 'Build Your Own',
                             link: '/conditions/integrations/build-your-own',
+                        },
+                    ]
+                },
+                {
+                    text: 'API',
+                    items: [
+                        {
+                            text: 'Behaviors',
+                            link: '/conditions/api/behaviors',
+                        },
+                        {
+                            text: 'Conditioners Manager',
+                            link: '/conditions/api/conditionsmanager',
+                        },
+                        {
+                            text: 'Event Handlers',
                             items: [
                                 {
-                                    text: 'Methodology',
-                                    link: '/conditions/integrations/build-your-own/methodology',
+                                    text: 'Conditionable',
+                                    link: '/conditions/api/conditionableeventhandler',
                                 },
                                 {
-                                    text: 'Behaviors',
-                                    link: '/conditions/integrations/build-your-own/behaviors',
-                                }
+                                    text: 'Conditioner',
+                                    link: '/conditions/api/conditionereventhandler',
+                                },
                             ]
                         },
                     ]
                 },
 
+            ],
+            '/attributizeusers/': [
+                {
+                    text: 'Rainlab.User Integration',
+                    items: [
+                        { text: 'Introduction', link: '/attributizeusers/' },
+                        { text: 'Installation', link: '/attributizeusers/installation' },
+                        { text: 'Settings', link: '/attributizeusers/settings' },
+                    ]
+                },
+            ],
+            '/attributizelocation/': [
+                {
+                    text: 'Getting Started',
+                    items: [
+                        { text: 'Introduction', link: '/attributizelocation/' },
+                        { text: 'Installation', link: '/attributizelocation/installation' },
+                    ]
+                },
+            ],
+            '/conditionsattributize/': [
+                {
+                    text: 'Getting Started',
+                    items: [
+                        { text: 'Introduction', link: '/conditionsattributize/' },
+                        { text: 'Installation', link: '/conditionsattributize/installation' },
+                    ]
+                },
+            ],
+            '/conditionsusers/': [
+                {
+                    text: 'Getting Started',
+                    items: [
+                        { text: 'Introduction', link: '/conditionsusers/' },
+                        { text: 'Installation', link: '/conditionsusers/installation' },
+                    ]
+                },
             ],
             '/': [
                 {

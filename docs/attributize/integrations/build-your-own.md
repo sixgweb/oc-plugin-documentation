@@ -1,15 +1,61 @@
 # Build Your Own
-Basic integration with Attributize is achieved through a simple [Plugin File](#plugin) and an [Event Handler](#event-handler).  
+Basic integration with Attributize is achieved through a Migration, Plugin File and an Event Handler.  
+
+## Migration
+
+Integrations are required to add the **field_values** column to the Fieldable model's table
+
+`plugins/acme/attributizeproduct/updates/add_conditions_to_table.php`
+
+```php
+<?php
+
+namespace Acme\AttributizeProduct\Updates;
+
+use Schema;
+use Acme\Products\Models\Product;
+use October\Rain\Database\Schema\Blueprint;
+use October\Rain\Database\Updates\Migration;
+
+class AddFieldValuesToTable extends Migration
+{
+    public function up()
+    {
+        Schema::table('acme_products_products', function ($table) {
+            $table->json('field_values')->nullable();
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('acme_products_products', function (Blueprint $table) {
+            if (Schema::hasColumn($table->getTable(), 'field_values')) {
+                $table->dropColumn('field_values');
+            }
+        });
+
+        Schema::table('acme_products_products', function ($table) {
+            $product = new Product;
+            foreach ($product->getAllFieldableFields() as $field) {
+                $field->deleteVirtualColumn();
+            }
+            if (Schema::hasColumn($table->getTable(), 'field_values')) {
+                $table->dropColumn(['field_values']);
+            }
+        });
+    }
+}
+```
 
 ## Plugin
 ```php
 <?php
 
-namespace Acme\AttributizeCharacter;
+namespace Acme\AttributizeProduct;
 
 use Event;
 use System\Classes\PluginBase;
-use Acme\AttributizeCharacter\Classes\EventHandler;
+use Acme\AttributizeProduct\Classes\EventHandler;
 
 /**
  * Plugin Information File
@@ -19,7 +65,7 @@ class Plugin extends PluginBase
 
     public $require = [
         'Sixgweb.Attributize',
-        'Acme.Character',
+        'Acme.Product',
     ];
 
     /**
@@ -30,8 +76,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'AttributizeCharacter',
-            'description' => 'Attributize Acme Character',
+            'name'        => 'AttributizeProduct',
+            'description' => 'Attributize Acme Product',
             'author'      => 'Acme',
             'icon'        => 'icon-user'
         ];
@@ -55,7 +101,7 @@ class Plugin extends PluginBase
 ```php
 <?php
 
-namespace Acme\AttributizeCharacter\Classes;
+namespace Acme\AttributizeProduct\Classes;
 
 use October\Rain\Database\Model;
 use Acme\Attributize\Classes\AbstractEventHandler;
@@ -70,7 +116,7 @@ class EventHandler extends AbstractEventHandler
      */
     protected function getTitle(): string
     {
-        return 'Character Field';
+        return 'Product Field';
     }
 
     /**
@@ -80,7 +126,7 @@ class EventHandler extends AbstractEventHandler
      */
     protected function getModelClass(): string
     {
-        return \Acme\Characters\Models\Character::class;
+        return \Acme\Store\Models\Product::class;
     }
 
     /**
@@ -91,7 +137,7 @@ class EventHandler extends AbstractEventHandler
      */
     protected function getComponentClass(): ?string
     {
-        return \Acme\Characters\Components\Character::class;
+        return \Acme\Store\Components\Product::class;
     }
 
     /**
@@ -101,7 +147,7 @@ class EventHandler extends AbstractEventHandler
      */
     protected function getControllerClass(): string
     {
-        return \Acme\Characters\Controllers\Characters::class;
+        return \Acme\Store\Controllers\Products::class;
     }
 
     /**
@@ -113,7 +159,7 @@ class EventHandler extends AbstractEventHandler
     protected function getComponentModel($component): Model
     {
         //Component should provide a method of retrieving the model.
-        return $component->getCharacter() ?? new ($this->getModelClass())();
+        return $component->getProduct() ?? new ($this->getModelClass())();
     }
 
     /**
@@ -125,9 +171,9 @@ class EventHandler extends AbstractEventHandler
     protected function getBackendMenuParameters(): array
     {
         return [
-            'owner' => 'Acme.Characters',
-            'code' => 'characters',
-            'path' => 'acme/characters/characters/',
+            'owner' => 'Acme.Products',
+            'code' => 'products',
+            'path' => 'acme/store/products/',
         ];
     }
 }

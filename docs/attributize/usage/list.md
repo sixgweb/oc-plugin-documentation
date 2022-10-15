@@ -4,7 +4,7 @@ The Field List displays all fields created for a particular extension (see [inte
 ![Field Editor](./images/usage-list.jpg 'List')
 
 ## Toolbar
-Use the Field List toolbar to create new fields, perform bulk actions on checked fields or search for fields by name.
+Use the Field List toolbar to create new fields, perform bulk actions on checked fields or search for fields by name.  (Permission required to delete fields)
 
 ![Field Editor](./images/usage-toolbar.jpg 'Toolbar')
 

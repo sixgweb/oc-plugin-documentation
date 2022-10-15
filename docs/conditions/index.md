@@ -1,9 +1,8 @@
 # Conditions
-An OctoberCMS plugin that enables filtering of Conditionable Models by one or more Conditioner Models.  Conditionable and Conditioner Models are defined in each plugin integration.
 
-For example, the RainLab.User integration enables the User Group Conditioner.
+![Conditions Editor](./images/conditions-banner.png 'Conditions Banner')
 
-![Conditions Editor](./images/conditions-repeater.png 'Conditions Editor')
+Adds conditional logic repeater field to other OctoberCMS plugins via integrations.  Conditioners are eager loaded and applied to Conditionables through a global scope, which excludes records that don't meet the required conditions.
 
 ### Conditions Editor
 The conditions editor is an OctoberCMS repeater field, automatically added to form widgets that edit Conditionable models.  [Learn More](./usage/editor)

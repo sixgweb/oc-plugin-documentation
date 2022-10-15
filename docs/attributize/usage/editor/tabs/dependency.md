@@ -4,4 +4,4 @@ Other form field this field depends on for backend processing.  See OctoberCMS <
 
 ![Field Editor](../../images/tab-dependency.jpg 'Visibility')
 
-For an example of field dependency, see [RainLab Location Integration](/attributize/integrations/rainlab-location)
+For an example of field dependency, see [RainLab Location Integration](/attributizelocation/)
