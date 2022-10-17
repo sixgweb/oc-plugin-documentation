@@ -12,7 +12,6 @@ Add custom fields, with a visual editor, to other OctoberCMS plugins via integra
  - **ListController Integration**
  - **ImportExportController Integration**
 
-<div class="tip custom-block" style="padding:16px;">
-<strong>Pro Tip:</strong> Check Out Our <a href="/conditions/">Conditions</a>
- Plugin to Add Conditions to Fields
-</div>
+::: tip  Pro Tip
+Check Out Our [Conditions](/conditions/) Plugin to add conditions to fields.
+:::
