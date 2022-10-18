@@ -181,7 +181,7 @@ export default {
                 {
                     text: 'Integrations',
                     items: [
-                        { text: 'Sixgweb.Attrbituzize', link: '/conditionsattributize/' },
+                        { text: 'Sixgweb.Attributize', link: '/conditionsattributize/' },
                         { text: 'RainLab.User', link: '/conditionsusers/' },
                         {
                             text: 'Build Your Own',
