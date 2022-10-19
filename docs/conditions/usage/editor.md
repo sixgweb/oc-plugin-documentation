@@ -1,7 +1,7 @@
 # Editor
 The conditions field will be added to form widgets that edit a Conditionable model, via integrations.  The conditions field is an [OctoberCMS repeater field](https://docs.octobercms.com/3.x/element/form/widget-repeater.html) that displays available Conditioners.
 
-Below, the RainLab.User integration enables the User Group Conditioner.
+Below, the [RainLab.User integration](/conditionsusers/) enables the User Group Conditioner.
 
 ![Column](../images/conditions-repeater.png)
 

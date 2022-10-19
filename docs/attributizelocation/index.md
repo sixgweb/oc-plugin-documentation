@@ -1,4 +1,4 @@
-# AttributizeLocation
+# Location Attributize Integration
 
 Integrates Attributize with RainLab Location plugin. Adds Countries and States predefined dropdown values and handles Depends On relationship between selected country and available states.
 

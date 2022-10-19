@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as n,a as o}from"./app.bf52e6dc.js";const h=JSON.parse('{"title":"Component","description":"","frontmatter":{},"headers":[],"relativePath":"attributize/usage/component.md"}'),a={name:"attributize/usage/component.md"},s=o("",4),i=[s];function p(c,r,d,l,_,m){return n(),t("div",null,i)}const g=e(a,[["render",p]]);export{h as __pageData,g as default};

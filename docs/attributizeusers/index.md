@@ -1,4 +1,4 @@
-# AttributizeUsers
+# User Attributize Integration
 
 Integrates Attributize with the RainLab User plugin. Adds a new **User Fields** backend menu item and injects the Attributize Field component into the RainLab.User Account component.
 

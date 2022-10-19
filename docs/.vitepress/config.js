@@ -49,6 +49,11 @@ export default {
                                 activeMatch: '/conditionsattributize/',
                             },
                             {
+                                text: 'October.Tailor',
+                                link: '/conditionstailor/',
+                                activeMatch: '/conditionstailor/',
+                            },
+                            {
                                 text: 'RainLab.User',
                                 link: '/conditionsusers/',
                                 activeMatch: '/conditionsusers/',
@@ -182,6 +187,7 @@ export default {
                     text: 'Integrations',
                     items: [
                         { text: 'Sixgweb.Attributize', link: '/conditionsattributize/' },
+                        { text: 'October.Tailor', link: '/conditionstailor/' },
                         { text: 'RainLab.User', link: '/conditionsusers/' },
                         {
                             text: 'Build Your Own',
@@ -242,6 +248,15 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/conditionsattributize/' },
                         { text: 'Installation', link: '/conditionsattributize/installation' },
+                    ]
+                },
+            ],
+            '/conditionstailor/': [
+                {
+                    text: 'Getting Started',
+                    items: [
+                        { text: 'Introduction', link: '/conditionstailor/' },
+                        { text: 'Installation', link: '/conditionstailor/installation' },
                     ]
                 },
             ],
