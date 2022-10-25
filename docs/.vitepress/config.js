@@ -4,7 +4,7 @@ export default {
     appearance: true,
     themeConfig: {
         siteTitle: false,
-        logo: '/logo-v5.png',
+        logo: '/assets/logo-v5.png',
         footer: {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
             copyright: 'Copyright © 2022 <a href="https://github.com/sixgweb">Sixgweb</a>'
