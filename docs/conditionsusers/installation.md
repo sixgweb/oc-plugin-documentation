@@ -1,5 +1,20 @@
 # Installation
-Install via composer
+
+## Requirements
+- Sixgweb.Conditions
+- RainLab.User
+
+## Marketplace
+
+Add the plugin to your project via the [OctoberCMS Market Place](https://octobercms.com/plugins) and run the following command in your project root:
+
+```
+php artisian project:sync
+```
+
+## Composer 
+
+Install via composer by running the following command in your project root:
 ```
 composer require sixgweb/conditionsusers-plugin
 ```

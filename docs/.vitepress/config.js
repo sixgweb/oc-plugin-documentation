@@ -4,9 +4,10 @@ export default {
     appearance: true,
     themeConfig: {
         siteTitle: false,
-        logo: {
-            light: '/images/logo-horizontal-blue.png',
-            dark: '/images/logo-horizontal-yellow.png',
+        logo: '/images/logo-v5.png',
+        footer: {
+            message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+            copyright: 'Copyright © 2022 <a href="https://github.com/sixgweb">Sixgweb</a>'
         },
         nav: [
             {
@@ -71,6 +72,7 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/attributize/' },
                         { text: 'Installation', link: '/attributize/installation' },
+                        { text: 'Settings', link: '/attributize/settings' },
                         { text: 'FAQ', link: '/attributize/faq' },
                     ]
                 },
@@ -104,7 +106,8 @@ export default {
                                 },
                             ],
                         },
-                        { text: 'Field Component', link: '/attributize/usage/component' },
+                        { text: 'Fields Component', link: '/attributize/usage/component' },
+                        { text: 'Twig Filter', link: '/attributize/usage/twigfilter' },
                     ]
                 },
                 {

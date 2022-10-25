@@ -1,5 +1,21 @@
 # Installation
-Install via composer
+
+## Requirements
+
+- Sixgweb.Attributize
+- RainLab.Location
+
+## Marketplace
+
+Add the plugin to your project via the [OctoberCMS Market Place](https://octobercms.com/plugins) and run the following command in your project root:
+
+```
+php artisian project:sync
+```
+
+## Composer
+
+Install via composer by running the following command in your project root:
 ```
 composer require sixgweb/attributizelocation-plugin
 ```

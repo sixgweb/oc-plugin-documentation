@@ -5,7 +5,7 @@ Integrations only providing Conditioners do not need the Conditionable Event Han
 
 ## Migration
 
-Integrations are required to add the **conditions** column to the Conditionable model's table
+Integrations are required to add the **conditions** column added to the Conditionable model's table
 
 `plugins/acme/conditionsproduct/updates/add_conditions_to_table.php`
 
@@ -132,7 +132,7 @@ class ConditionerEventHandler extends AbstractConditionerEventHandler
     }
 
     /**
-     * Returns array of options used for in filter,
+     * Returns array of options used in filter,
      * import, and export dropdowns
      *
      * @return array
@@ -156,7 +156,7 @@ class ConditionerEventHandler extends AbstractConditionerEventHandler
          * Return checkboxlist
          * return [
          *     'label' => 'Product',
-         *     'type' => 'repeater',
+         *     'type' => 'checkboxlist',
          *     'options' => \Acme\Products\Models\Product::lists('name', 'id'),
          * ];
          */
@@ -191,7 +191,7 @@ class ConditionerEventHandler extends AbstractConditionerEventHandler
     /**
      * Opportunity to create custom logic for adding conditioners
      * to the ConditionersManager.  If null, conditioner is added
-     * to ConditionsManager afterFetch.
+     * to ConditionsManager during model's afterFetch event.
      *
      * @return callable|null
      */

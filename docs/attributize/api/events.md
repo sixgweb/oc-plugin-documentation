@@ -52,3 +52,17 @@ Event::listen('sixgweb.attributize.createPreview', function($fieldQuery, $filter
     ]);
 });
 ```
+
+## fields.getFields
+
+Fired in the [Fields Component](/attributize/usage/component) and provides access to `$fieldValues` for customization.
+
+``` php
+use Sixgweb\Attributize\Components\Fields;
+
+Fields::extend(function ($component) {
+    $component->bindEvent('fields.getFields', function (&$fieldValues) use ($component) {
+
+    });
+});
+```

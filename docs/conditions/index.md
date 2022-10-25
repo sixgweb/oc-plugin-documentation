@@ -12,4 +12,4 @@ The conditions editor is an OctoberCMS repeater field, automatically added to fo
 Conditionable Models compare their conditions to the loaded Conditioner Model(s), using a [global scope](https://laravel.com/docs/9.x/eloquent#global-scopes)
 
 ### Conditioner Models
-Conditioner Models are defined via Integrations and used by the Conditionable Model(s) [global scope](https://laravel.com/docs/9.x/eloquent#global-scopes).
+Conditioner Models are defined via Integrations and used by the Conditionable Model(s)
