@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as i,a}from"./app.5aadbeaf.js";const p=JSON.parse('{"title":"Field Editor","description":"","frontmatter":{},"headers":[],"relativePath":"attributize/usage/editor.md"}'),o={name:"attributize/usage/editor.md"},r=a("",3),n=[r];function d(l,s,c,u,h,_){return i(),e("div",null,n)}const m=t(o,[["render",d]]);export{p as __pageData,m as default};
