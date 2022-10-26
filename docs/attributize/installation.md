@@ -18,3 +18,8 @@ php artisan project:sync
 ### Backend Installer
 
 In the Backend, visit **Settings->System Updates->Install Packages** press the **Sync Project** button.
+
+## Scheduler
+
+With the availability of frontend file uploads comes the potential for orphaned file attachments.
+Attributize will remove any orphaned file uploads every hour, if you have the [scheduler set up](https://docs.octobercms.com/3.x/setup/scheduler.html).
