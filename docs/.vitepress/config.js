@@ -68,7 +68,7 @@ export default {
         sidebar: {
             '/attributize/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Attributize',
                     items: [
                         { text: 'Introduction', link: '/attributize/' },
                         { text: 'Installation', link: '/attributize/installation' },
@@ -162,7 +162,7 @@ export default {
             ],
             '/conditions/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Conditions',
                     items: [
                         { text: 'Introduction', link: '/conditions/' },
                         { text: 'Installation', link: '/conditions/installation' },
@@ -183,6 +183,10 @@ export default {
                         {
                             text: 'User Group Based Fields',
                             link: '/conditions/use-cases/user-group-based-fields',
+                        },
+                        {
+                            text: 'User Group Based Tailor Content',
+                            link: '/conditions/use-cases/user-group-based-tailor-content',
                         }
                     ],
                 },
@@ -228,7 +232,7 @@ export default {
             ],
             '/attributizeusers/': [
                 {
-                    text: 'Rainlab.User Integration',
+                    text: 'Attributize Users',
                     items: [
                         { text: 'Introduction', link: '/attributizeusers/' },
                         { text: 'Installation', link: '/attributizeusers/installation' },
@@ -238,7 +242,7 @@ export default {
             ],
             '/attributizelocation/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Attributize Location',
                     items: [
                         { text: 'Introduction', link: '/attributizelocation/' },
                         { text: 'Installation', link: '/attributizelocation/installation' },
@@ -247,7 +251,7 @@ export default {
             ],
             '/conditionsattributize/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Conditions Attributize',
                     items: [
                         { text: 'Introduction', link: '/conditionsattributize/' },
                         { text: 'Installation', link: '/conditionsattributize/installation' },
@@ -256,7 +260,7 @@ export default {
             ],
             '/conditionstailor/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Conditions Tailor',
                     items: [
                         { text: 'Introduction', link: '/conditionstailor/' },
                         { text: 'Installation', link: '/conditionstailor/installation' },
@@ -265,7 +269,7 @@ export default {
             ],
             '/conditionsusers/': [
                 {
-                    text: 'Getting Started',
+                    text: 'Conditions Users',
                     items: [
                         { text: 'Introduction', link: '/conditionsusers/' },
                         { text: 'Installation', link: '/conditionsusers/installation' },
