@@ -2,7 +2,7 @@
 
 ## Requirements
 - OctoberCMS 3.x
-- Mysql 5.7+
+- Mysql 5.7+ or Postgres 12+
 - Bootstrap 5.x <br /><small>Injectable via Attributize setting, if you're theme doesn't use Bootstrap 5</small>
 
 ## Marketplace

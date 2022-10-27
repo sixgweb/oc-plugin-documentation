@@ -73,6 +73,7 @@ export default {
                         { text: 'Introduction', link: '/attributize/' },
                         { text: 'Installation', link: '/attributize/installation' },
                         { text: 'Settings', link: '/attributize/settings' },
+                        { text: 'Import/Export', link: '/attributize/import-export' },
                         { text: 'FAQ', link: '/attributize/faq' },
                     ]
                 },

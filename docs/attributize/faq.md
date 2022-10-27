@@ -2,10 +2,10 @@
 
 ## How is the Data Stored?
 
-Integrations add a JSON column named **field_values** to the Fieldable model's table.  When a Field is saved, a virtual column and corresponding index are added, using the value from the field_values column
+Integrations add a JSON column named **field_values** to the Fieldable model's table.  When a Field is saved, a generated column and corresponding index are added, using the value from the field_values column
 
 ## How do I access the data for display?
-you may access the model data by using the **field_values** column or the **field_values_** prefix, followed by the field code.  Field codes can be found in the field editor [settings tab](./usage/editor/tabs/settings).
+Use the [Twig Filter](/attributize/usage/twigfilter.html#twig-filter) or you may access the model data by using the **field_values** column or the **field_values_** prefix, followed by the field code.  Field codes can be found in the field editor [settings tab](./usage/editor/tabs/settings).
 
 ``` twig
 {% for item in items %}
