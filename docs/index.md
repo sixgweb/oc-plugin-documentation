@@ -11,4 +11,7 @@ hero:
     - theme: alt
       text: Conditions Documentation
       link: /conditions/
+    - theme: alt
+      text: Forms Documentation
+      link: /forms/
 ---

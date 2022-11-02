@@ -1,7 +1,6 @@
 # FAQ
 
 ## How is the Data Stored?
-
 Integrations add a JSON column named **field_values** to the Fieldable model's table where all field data is stored.  Fields with **Is Searchable** or **Is Filterable** enabled will have a generated column and corresponding index created, using the value from the field_values column.
 
 ## How do I access the data for display?
@@ -19,5 +18,7 @@ The data in the **field_values** column will be kept for backup/historical purpo
 Let's say you accidentally delete the **First Name** field.  Luckily, the data remains in the table and is easily retrievable by recreating the **First Name** field. 
 
 ## Invalid date value supplied to DateTime helper
-
 This happens when an existing Field, with model data, is changed to a datetime type.  You must either update the records to use a datetime value or revert the Field back to the original type.
+
+## Can I Customize Frontend Output?
+Attributize provides a visual field editor for native OCMS fields and exposes the backend fields for frontend use.  Attributize does **not** provide a method to override field output and the backend partials are used to generate the field HTML.

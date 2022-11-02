@@ -64,6 +64,16 @@ export default {
                 ]
 
             },
+            {
+                text: 'Forms',
+                activeMatch: '/forms/',
+                items: [
+                    {
+                        text: 'Documentation',
+                        link: '/forms/',
+                    },
+                ]
+            },
         ],
         sidebar: {
             '/attributize/': [
@@ -274,6 +284,22 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/conditionsusers/' },
                         { text: 'Installation', link: '/conditionsusers/installation' },
+                    ]
+                },
+            ],
+            '/forms/': [
+                {
+                    text: 'Forms',
+                    items: [
+                        { text: 'Introduction', link: '/forms/' },
+                        { text: 'Installation', link: '/forms/installation' },
+                    ]
+                },
+                {
+                    text: 'Usage',
+                    items: [
+                        { text: 'Forms Controller', link: '/forms/usage/forms-controller' },
+                        { text: 'Entries Controller', link: '/forms/usage/entries-controller' },
                     ]
                 },
             ],
