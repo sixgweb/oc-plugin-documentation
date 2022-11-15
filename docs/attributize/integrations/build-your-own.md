@@ -173,7 +173,7 @@ class EventHandler extends AbstractEventHandler
         return [
             'owner' => 'Acme.Products',
             'code' => 'products',
-            'path' => 'acme/store/products/',
+            'url' => \Backend::url('acme/store/products/fields'),
         ];
     }
 }

@@ -300,6 +300,7 @@ export default {
                     items: [
                         { text: 'Forms Controller', link: '/forms/usage/forms-controller' },
                         { text: 'Entries Controller', link: '/forms/usage/entries-controller' },
+                        { text: 'Entry Component', link: '/forms/usage/entry-component' },
                     ]
                 },
             ],
