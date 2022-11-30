@@ -23,5 +23,3 @@ Adds the **fields** controller action, updates available list columns,
 ## Sixgweb\Attributize\Behaviors\FieldsImportExportController
 
 Adds Fieldable Fields to the export columns
-
-### Methods

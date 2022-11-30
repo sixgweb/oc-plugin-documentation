@@ -1,5 +1,5 @@
 # Build Your Own
-Basic integration with Attributize is achieved through a Migration, Plugin File and an Event Handler.  
+Basic integration with Attributize is achieved through a Migration, Plugin File, Event Handler and Component.
 
 ## Migration
 
