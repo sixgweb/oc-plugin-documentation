@@ -64,7 +64,7 @@ export default {
                 ]
 
             },
-            {
+            /*{
                 text: 'Forms',
                 activeMatch: '/forms/',
                 items: [
@@ -73,7 +73,7 @@ export default {
                         link: '/forms/',
                     },
                 ]
-            },
+            },*/
         ],
         sidebar: {
             '/attributize/': [
@@ -287,7 +287,7 @@ export default {
                     ]
                 },
             ],
-            '/forms/': [
+            /*'/forms/': [
                 {
                     text: 'Forms',
                     items: [
@@ -303,7 +303,7 @@ export default {
                         { text: 'Entry Component', link: '/forms/usage/entry-component' },
                     ]
                 },
-            ],
+            ],*/
             '/': [
                 {
                     text: 'Plugins',

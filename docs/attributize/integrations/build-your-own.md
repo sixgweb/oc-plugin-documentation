@@ -5,7 +5,7 @@ Basic integration with Attributize is achieved through a Migration, Plugin File 
 
 Integrations are required to add the **field_values** column to the Fieldable model's table
 
-`plugins/acme/attributizeproduct/updates/add_conditions_to_table.php`
+`plugins/acme/attributizeproduct/updates/add_field_values_to_table.php`
 
 ```php
 <?php
@@ -48,6 +48,9 @@ class AddFieldValuesToTable extends Migration
 ```
 
 ## Plugin
+
+The plugin file subscribes to event handler and registers the fields component (optional);
+
 ```php
 <?php
 
@@ -92,11 +95,25 @@ class Plugin extends PluginBase
     {
         Event::subscribe(EventHandler::class);
     }
+
+    /**
+     * register plugin components
+     *
+     * @return array
+     */
+    public function registerComponents(): array
+    {
+        return [
+            'Acme\AttributizeProduct\Components\Fields' => 'productFields',
+        ];
+    }
 }
 
 ```
 
 ## Event Handler
+
+The event handler provides a title, class names and backend menu configuration.
 
 ```php
 <?php
@@ -174,6 +191,38 @@ class EventHandler extends AbstractEventHandler
             'owner' => 'Acme.Products',
             'code' => 'products',
             'url' => \Backend::url('acme/store/products/fields'),
+        ];
+    }
+}
+
+```
+
+## Component
+
+The component extends the Attributize Fields component and only provides component details.
+
+```php
+<?php
+
+namespace Acme\AttributizeProduct\Components;
+
+use Sixgweb\Attributize\Components\Fields as FieldsBase;
+
+/**
+ * Fields Component
+ *
+ * @link https://docs.octobercms.com/3.x/extend/cms-components.html
+ */
+class Fields extends FieldsBase
+{
+    /**
+     * componentDetails
+     */
+    public function componentDetails()
+    {
+        return [
+            'name' => 'Product Fields',
+            'description' => 'Display Attributize Fields for Acme.Products'
         ];
     }
 }

@@ -1,76 +1,33 @@
 # Fields Component
 
-The `attributizeFields` component is automatically injected via the integration.  For example, the [RainLab User Integration](/attributizeusers/) injects the Fields component into the Account component for registration and update.
+Each integration will provide its own fields component to display the corresponding fields.  The fields component will search the current page/layout for the component matching the integration, so both must be added to the page/layout.  
 
-End users need only ensure the component is added to the page or partial via the twig component tag
-```
-{% component 'attributizeFields' %}
-```
+For example, the RainLab.User integration requires both the RainLab.User account and AttributizeUsers userFields components to be added to the page/layout.
 
 ## Properties
 
-### codes
-Limit fields to specified code(s). Accepts comma separated or array value.  Default: `[]`
+### Container Class
+Container class used for fields container.  Default: `row`
 
-_Note: Field codes can be found in field's [settings tab](/attributize/usage/editor/tabs/settings)_
+### Floating Labels
+Enable Bootstrap 5 floating labels on form fields.  Default: `false`
 
-```
-{% component 'attributizeFields' tabs='first_name,last_name,city,state' %}`
-```
-OR
-```
-{% 
-    component 'attributizeFields'
-    tabs=['first_name', 'last_name', 'city', 'state'] 
-%}`
-```
+### Use Tabbed Interface
+Use Bootstrap 5 tabbed interface for fields. Default: `true`
+
+### Preview Mode
+User preview mode for the form fields (read only). Default: `false`
+
+### Limit Fields
+Limit to checked fields.  If none are checked, show all.  Default: `[]`
 
 ::: danger Validation Notice
 Fields not included in `codes` will not be validated.
 :::
 
-### tabs
-Limit fields to specified tab(s).  Accepts comma separated or array value. Default: `[]`
-
-_Note: Values must match tab names exactly.  If you change tab names, you must change the value(s) as well._
-
-```
-{% component 'attributizeFields' tabs='Address,Contact Information' %}`
-```
-OR
-```
-{% component 'attributizeFields' tabs=['Address, 'Contact Information'] %}`
-```
+### Limit Tabs
+Limit fields to checked tab.  If none are checked, show all.  Default: `[]`
 
 ::: danger Validation Notice
 Fields not included in `tabs` will not be validated.
 :::
-
-
-### useTabs
-Use Bootstrap 5 tabbed interface for fields. Default: `true`
-
-```
-{% component 'attributizeFields' useTabs=true %}`
-```
-
-### floatingLabels
-Enable Bootstrap 5 floating labels on form fields.  Takes precedence over [Settings](/attributize/settings.html#floating-labels). Default: `false`
-
-```
-{% component 'attributizeFields' floatingLabels=true %}
-```
-
-### previewMode
-Enable preview mode for the form fields, rending them readonly. Default: `false`
-
-```
-{% component 'attributizeFields' previewMode=true %}
-```
-
-### fieldsContainerClass
-Container class used for fields container.  Default: `row`
-
-```
-{% component 'attributizeFields' fieldsContainerClass='bg-light p-5' %}
-```

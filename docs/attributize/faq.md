@@ -21,4 +21,4 @@ Let's say you accidentally delete the **First Name** field.  Luckily, the data r
 This happens when an existing Field, with model data, is changed to a datetime type.  You must either update the records to use a datetime value or revert the Field back to the original type.
 
 ## Can I Customize Frontend Output?
-Attributize provides a visual field editor for native OCMS fields and exposes the backend fields for frontend use.  Attributize does **not** provide a method to override field output and the backend partials are used to generate the field HTML.
+Not at this time.  Attributize exposes backend form widgets for frontend use.  All form fields are generated using the same HTML output found in the backend, which is currently Bootstrap 5 markup.
