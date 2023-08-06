@@ -1,10 +1,9 @@
 # Installation
 
 ## Requirements
-- Sixgweb.Attributize
-- Sixgweb.Conditions
-- Sixgweb.AttributizeForms
-- Sixgweb.ConditionsForms
+- OctoberCMS 3.x
+- [Sixgweb.Attributize](https://octobercms.com/plugin/sixgweb-attributize)
+- [Sixgweb.Conditions](https://octobercms.com/plugin/sixgweb-conditions)
 
 ## Marketplace
 

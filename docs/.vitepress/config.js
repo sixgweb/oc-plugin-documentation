@@ -7,7 +7,7 @@ export default {
         logo: 'https://raw.githubusercontent.com/sixgweb/oc-plugin-documentation/main/docs/.vitepress/dist/assets/logo-v5.png',
         footer: {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-            copyright: 'Copyright © 2022 <a href="https://github.com/sixgweb">Sixgweb</a>'
+            copyright: 'Copyright © 2023 <a href="https://github.com/sixgweb">Sixgweb</a>'
         },
         nav: [
             {
@@ -72,8 +72,26 @@ export default {
                         text: 'Documentation',
                         link: '/forms/',
                     },
+                    {
+                        text: 'Integrations',
+                        items: [
+                            {
+                                text: 'RainLab.Notify',
+                                link: '/notifyforms/',
+                            },
+                            {
+                                text: 'Sixgweb.reCaptcha',
+                                link: '/recatpchaforms/',
+                            }
+                        ],
+                    },
                 ]
             },*/
+            {
+                text: 'ListSaver',
+                activeMatch: '/listsaver/',
+                link: '/listsaver/',
+            },
         ],
         sidebar: {
             '/attributize/': [
@@ -303,7 +321,39 @@ export default {
                         { text: 'Entry Component', link: '/forms/usage/entry-component' },
                     ]
                 },
+                {
+                    text: 'Integrations',
+                    items: [
+                        {
+                            text: 'RainLab.Notify',
+                            link: '/notifyforms/',
+                        },
+                        {
+                            text: 'Sixgweb.reCaptcha',
+                            link: '/recatpchaforms/',
+                        }
+                    ]
+                },
+                {
+                    text: 'API',
+                    items: [
+                        {
+                            text: 'Events',
+                            link: '/forms/api/events',
+                        },
+                    ]
+                },
             ],*/
+            '/listsaver/': [
+                {
+                    text: 'List Saver',
+                    items: [
+                        { text: 'Introduction', link: '/listsaver/' },
+                        { text: 'Installation', link: '/listsaver/installation' },
+                        { text: 'Usage', link: '/listsaver/usage' },
+                    ]
+                },
+            ],
             '/': [
                 {
                     text: 'Plugins',

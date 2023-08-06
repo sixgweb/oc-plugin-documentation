@@ -8,7 +8,7 @@ Use the [Twig Filter](/attributize/usage/twigfilter.html#twig-filter) or you may
 
 ``` twig
 {% for item in items %}
-    {{ item.field_values.favorite_color}}
+    {{ item.field_values.favorite_color }}
 {% endfor %}
 ```
 

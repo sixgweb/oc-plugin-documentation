@@ -14,11 +14,12 @@
     --vp-c-brand-lighter: var(--vp-c-blue-lighter);
     --vp-c-brand-dark: var(--vp-c-blue-dark);
     --vp-c-brand-darker: var(--vp-c-blue-darker);
-    --vp-nav-height-desktop: 100px;
+    --vp-nav-height: 100px;
 }
 
 .title {
     justify-content: center;
+    --vp-c-divider: transparent;
 }
 
 .logo {
