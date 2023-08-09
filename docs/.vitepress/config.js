@@ -22,6 +22,10 @@ export default {
                         text: 'Integrations',
                         items: [
                             {
+                                text: 'Backend.User',
+                                link: '/attributizebackendusers/',
+                            },
+                            {
                                 text: 'RainLab.User',
                                 link: '/attributizeusers/',
                             },
@@ -163,6 +167,7 @@ export default {
                 {
                     text: 'Integrations',
                     items: [
+                        { text: 'Backend User', link: '/attributizebackendusers/' },
                         { text: 'RainLab User', link: '/attributizeusers/' },
                         { text: 'RainLab Location', link: '/attributizelocation/' },
                         {
@@ -258,6 +263,16 @@ export default {
                     ]
                 },
 
+            ],
+            '/attributizebackendusers/': [
+                {
+                    text: 'Attributize Backend Users',
+                    items: [
+                        { text: 'Introduction', link: '/attributizebackendusers/' },
+                        { text: 'Installation', link: '/attributizebackendusers/installation' },
+                        { text: 'Settings', link: '/attributizebackendusers/settings' },
+                    ]
+                },
             ],
             '/attributizeusers/': [
                 {
