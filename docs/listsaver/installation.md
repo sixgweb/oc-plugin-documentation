@@ -10,7 +10,7 @@ composer require sixgweb/listsaver-plugin
 
 ## Marketplace
 
-Add the plugin to your project via the [OctoberCMS Market Place](https://octobercms.com/plugin/sixgweb-listsaver).
+Add the plugin to your project via the [OctoberCMS Marketplace](https://octobercms.com/plugin/sixgweb-listsaver).
 
 ### Command Line
 

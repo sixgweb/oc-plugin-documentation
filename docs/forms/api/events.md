@@ -1,27 +1,28 @@
 # Events
 
-## sixgweb.forms.beforeEntry
+## sixgweb.forms.entry.beforeSave
 
-Event fired before the entry is saved to the database.
+Event fired before the entry is saved to the database, after validation.
 
 ``` php
-//Sixgweb\Forms\Models\Entry $entry
-Event::listen('sixgweb.forms.beforeEntry', function ($entry) {
+Event::listen('sixgweb.forms.entry.beforeSave', function ($entry) {
     if ($entry->form->slug == 'soup') {
         throw new ApplicationException('No Soup for You!');
     }
 });
 ```
 
-## sixgweb.forms.afterEntry
+## sixgweb.forms.entry.afterSave
 
 Event fired after the entry is saved to the database.
 
 ``` php
-//Sixgweb\Forms\Models\Entry $entry
-Event::listen('sixgweb.forms.afterEntry', function ($entry) {
-    if ($entry->field_values['cellphone'] && $entry->field_values['text_me']) {
-        sendTextMessage($entry->field_value['cellphone'], 'Thank you for your entry');
+Event::listen('sixgweb.forms.entry.afterSave', function ($entry) {
+    if (
+        $entry->field_values['cellphone'] && 
+        $entry->field_values['text_me']
+    ) {
+        $this->addTextMessageSubscriber($entry->field_values['cellphone']);
     }
 });
 ```

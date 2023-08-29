@@ -7,7 +7,7 @@
 
 ## Marketplace
 
-Add the plugin to your project via the [OctoberCMS Market Place](https://octobercms.com/plugin/sixgweb-attributize).
+Add the plugin to your project via the [OctoberCMS Marketplace](https://octobercms.com/plugin/sixgweb-attributize).
 
 ### Command Line
 

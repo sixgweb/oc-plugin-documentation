@@ -8,6 +8,7 @@ The forms area contains all of the forms for your project and provides the follo
 
 | Field | Description |
 | --- | -- |
+| Is Enabled | Enable or disable the form |
 | Name | The name of the form |
 | Description | The description of the form, shown above the form fields |
 | Confirmation Message | The message displayed to the user upon successful entry.  Message does not display if form set to redirect after submission |
@@ -17,13 +18,15 @@ The forms area contains all of the forms for your project and provides the follo
 
 | Field | Description |
 | ----------- | ----------- |
-| Is Enabled | Enable or disable the form |
-| Submission Redirect URL | Absolute/Relative URL to redirect to, after form submission.  Leave blank to show form Confirmation Message. |
+| Submission Redirect URL | URL to redirect to after submission. Leave blank to show form confirmation message. |
 | Save Entries | Save entries to the database |
 | Purge Entries | Purge entries saved to the database, after a specified number of days |
-| Days to Keep Entries | Number of days to keep entries, if Purge Entries is enabled |
-| Throttle Entries | Whether visitors should have to wait before submitting the form again |
-| Throttle Timeout | Number of seconds the visitor must wait, if throttling is enabled |
+| Purge Days | Number of days to keep form entries in database |
+| Throttle Entries | Limit the number of Entries Allowed in a given Time Period/Unit |
+| Entries Allowed | Number of entries allowed in the given time period |
+| Entry Time Period | Time period number to allow number of entries |
+| Entry Time Period Unit | Unit of time used for the time period value |
+| Throttle by IP Address | Throttle entries by IP address, instead of session ID. If user is logged in, throttling is done by user ID regardless of this setting |
 
 ## Fields Tab
 

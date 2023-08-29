@@ -11,9 +11,9 @@ hero:
     - theme: alt
       text: Conditions
       link: /conditions/
-    #- theme: alt
-    #  text: Forms
-    #  link: /forms/
+    - theme: alt
+      text: Forms
+      link: /forms/
     - theme: alt
       text: ListSaver
       link: /listsaver/

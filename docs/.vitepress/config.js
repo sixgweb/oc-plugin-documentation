@@ -68,7 +68,7 @@ export default {
                 ]
 
             },
-            /*{
+            {
                 text: 'Forms',
                 activeMatch: '/forms/',
                 items: [
@@ -83,14 +83,14 @@ export default {
                                 text: 'RainLab.Notify',
                                 link: '/notifyforms/',
                             },
-                            {
+                            /*{
                                 text: 'Sixgweb.reCaptcha',
                                 link: '/recatpchaforms/',
-                            }
+                            }*/
                         ],
                     },
                 ]
-            },*/
+            },
             {
                 text: 'ListSaver',
                 activeMatch: '/listsaver/',
@@ -320,12 +320,13 @@ export default {
                     ]
                 },
             ],
-            /*'/forms/': [
+            '/forms/': [
                 {
                     text: 'Forms',
                     items: [
                         { text: 'Introduction', link: '/forms/' },
                         { text: 'Installation', link: '/forms/installation' },
+                        { text: 'FAQ', link: '/forms/faq' },
                     ]
                 },
                 {
@@ -333,7 +334,9 @@ export default {
                     items: [
                         { text: 'Forms Controller', link: '/forms/usage/forms-controller' },
                         { text: 'Entries Controller', link: '/forms/usage/entries-controller' },
+                        { text: 'Entry Fields', link: '/forms/usage/entry-fields' },
                         { text: 'Entry Component', link: '/forms/usage/entry-component' },
+                        { text: 'Twig Functions', link: '/forms/usage/twig-markup' },
                     ]
                 },
                 {
@@ -343,10 +346,10 @@ export default {
                             text: 'RainLab.Notify',
                             link: '/notifyforms/',
                         },
-                        {
+                        /*{
                             text: 'Sixgweb.reCaptcha',
                             link: '/recatpchaforms/',
-                        }
+                        }*/
                     ]
                 },
                 {
@@ -358,7 +361,26 @@ export default {
                         },
                     ]
                 },
-            ],*/
+            ],
+            '/notifyform': [
+                {
+                    text: 'Notify Forms',
+                    items: [
+                        { text: 'Introduction', link: '/notifyforms/' },
+                        { text: 'Installation', link: '/notifyforms/installation' },
+                        {
+                            text: 'Usage',
+                            items: [
+                                { text: 'Default Rule', link: '/notifyforms/usage/default-rule' },
+                                { text: 'Default Template', link: '/notifyforms/usage/default-template' },
+                                { text: 'Rules', link: '/notifyforms/usage/rules' },
+                                { text: 'Conditions', link: '/notifyforms/usage/conditions' },
+                            ]
+                        },
+                        { text: 'Notify Conditions', link: '/notifyforms/conditions' },
+                    ]
+                },
+            ],
             '/listsaver/': [
                 {
                     text: 'List Saver',
