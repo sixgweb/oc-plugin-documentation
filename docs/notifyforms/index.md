@@ -2,10 +2,6 @@
 
 Integrates Forms with RainLab Notify plugin.  Adds new **Notifying** tab to the form editor **Settings** tab
 
-:::tip Default Notification Rule
-This plugin creates a permanent notification rule to notify all backend users of new entries if [Send Notifications](#send-notifications) is enabled in the form settings.  Disable this rule, if you do not want to use it, as it will recreate upon deletion.
-:::
-
 ### Send Notifications
 Available as a Notify Rule condition.  Default Notification Rule (below) uses this condition to send notifications to all backend users.
 

@@ -369,15 +369,14 @@ export default {
                         { text: 'Introduction', link: '/notifyforms/' },
                         { text: 'Installation', link: '/notifyforms/installation' },
                         {
-                            text: 'Usage',
+                            text: 'Notification',
                             items: [
-                                { text: 'Default Rule', link: '/notifyforms/usage/default-rule' },
-                                { text: 'Default Template', link: '/notifyforms/usage/default-template' },
-                                { text: 'Rules', link: '/notifyforms/usage/rules' },
-                                { text: 'Conditions', link: '/notifyforms/usage/conditions' },
+                                { text: 'Default Rule', link: '/notifyforms/notification/default-rule' },
+                                { text: 'Default Template', link: '/notifyforms/notification/default-template' },
+                                { text: 'Rules', link: '/notifyforms/notification/rules' },
+                                { text: 'Conditions', link: '/notifyforms/notification/conditions' },
                             ]
                         },
-                        { text: 'Notify Conditions', link: '/notifyforms/conditions' },
                     ]
                 },
             ],

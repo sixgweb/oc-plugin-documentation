@@ -1,19 +1,4 @@
 :root {
-    --vp-c-yellow: #C8C056;
-    --vp-c-yellow-light: #F9EF68;
-    --vp-c-yellow-lighter: #fcfc7c;
-    --vp-c-yellow-dark: #9B9544;
-    --vp-c-yellow-darker: #726F31;
-    --vp-c-blue: #009FDF;
-    --vp-c-blue-light: #00B9F7;
-    --vp-c-blue-lighter: #0AC2FF;
-    --vp-c-blue-dark: #0097C9;
-    --vp-c-blue-darker: #008AB7;
-    --vp-c-brand: var(--vp-c-blue);
-    --vp-c-brand-light: var(--vp-c-blue-light);
-    --vp-c-brand-lighter: var(--vp-c-blue-lighter);
-    --vp-c-brand-dark: var(--vp-c-blue-dark);
-    --vp-c-brand-darker: var(--vp-c-blue-darker);
     --vp-nav-height: 100px;
 }
 
@@ -24,13 +9,4 @@
 
 .logo {
     height: 100px !important;
-}
-
-
-html.dark {
-    --vp-c-brand: var(--vp-c-yellow);
-    --vp-c-brand-light: var(--vp-c-yellow-light);
-    --vp-c-brand-lighter: var(--vp-c-yellow-lighter);
-    --vp-c-brand-dark: var(--vp-c-yellow-dark);
-    --vp-c-brand-darker: var(--vp-c-yellow-darker);
 }

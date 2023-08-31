@@ -1,4 +1,4 @@
 # Default Mail Template
 
  ## sixgweb.notifyforms::mail.entry
- Default corfmr
+Default template containing the entry data in an HTML list
