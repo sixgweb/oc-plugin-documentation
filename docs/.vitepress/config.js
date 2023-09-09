@@ -386,6 +386,7 @@ export default {
                     items: [
                         { text: 'Introduction', link: '/listsaver/' },
                         { text: 'Installation', link: '/listsaver/installation' },
+                        { text: 'Settings', link: '/listsaver/settings' },
                         { text: 'Usage', link: '/listsaver/usage' },
                     ]
                 },
