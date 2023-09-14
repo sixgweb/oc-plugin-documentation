@@ -388,6 +388,7 @@ export default {
                         { text: 'Installation', link: '/listsaver/installation' },
                         { text: 'Settings', link: '/listsaver/settings' },
                         { text: 'Usage', link: '/listsaver/usage' },
+                        { text: 'Events', link: '/listsaver/events' },
                     ]
                 },
             ],
