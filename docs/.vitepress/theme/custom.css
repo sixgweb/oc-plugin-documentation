@@ -10,3 +10,9 @@
 .logo {
     height: 100px !important;
 }
+
+@media (min-width: 960px) {
+    .curtain {
+        top: -100px !important;
+    }
+}

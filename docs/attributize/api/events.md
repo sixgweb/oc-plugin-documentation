@@ -1,17 +1,16 @@
 # Events
 
-## sixgweb.attributize.getFieldableFields
-
+## sixgweb.attributize.getFieldableFields <small>(deprecated 1.1.0)</small><br />sixgweb.attributize.fieldable.getFields
 Provides and opportunity to modify the Field model query
 
 ``` php
 //October\Rain\Database\Builder $fieldQuery
-Event::listen('sixgweb.attributize.getFieldableFields', function (&$fieldQuery) {
+Event::listen('sixgweb.attributize.fieldable.getFields', function (&$fieldQuery) {
     $fieldQuery->where('code', '!=', 'purple');
 });
 ```
 
-## sixgweb.attributize.afterGetFieldableFields
+## sixgweb.attributize.afterGetFieldableFields <small>(deprecated 1.1.0)</small><br />sixgweb.attributize.fieldable.afterGetFields
 
 Provides and opportunity to modify the Field results collection.
 

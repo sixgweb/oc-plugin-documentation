@@ -7,7 +7,7 @@ export default {
         logo: 'https://raw.githubusercontent.com/sixgweb/oc-plugin-documentation/main/docs/.vitepress/dist/assets/logo-v5.png',
         footer: {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-            copyright: 'Copyright © 2023 <a href="https://github.com/sixgweb">Sixgweb</a>'
+            copyright: 'Copyright © 2024 <a href="https://github.com/sixgweb">Sixgweb</a>'
         },
         nav: [
             {
@@ -107,6 +107,7 @@ export default {
                         { text: 'Settings', link: '/attributize/settings' },
                         { text: 'Import/Export', link: '/attributize/import-export' },
                         { text: 'FAQ', link: '/attributize/faq' },
+                        { text: 'Changelog', link: '/attributize/changelog' }
                     ]
                 },
                 {

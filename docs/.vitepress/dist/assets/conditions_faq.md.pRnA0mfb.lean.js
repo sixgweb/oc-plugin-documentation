@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,V as a}from"./chunks/framework.MoTZrTyP.js";const m=JSON.parse('{"title":"FAQ","description":"","frontmatter":{},"headers":[],"relativePath":"conditions/faq.md","filePath":"conditions/faq.md"}'),n={name:"conditions/faq.md"},i=a("",5),r=[i];function s(d,c,h,l,_,f){return o(),e("div",null,r)}const u=t(n,[["render",s]]);export{m as __pageData,u as default};
