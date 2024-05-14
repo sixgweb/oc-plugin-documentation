@@ -8,13 +8,19 @@ Fieldable creates the relationship between the Field model and the Plugin model.
 
 ## Methods
 
-### public function getFieldableFields(): October\Rain\Database\Collection
+### public function fieldableGetFields
 
-Returns model fields based on the current area (frontend/backend), action (create/update) and enabled status.
+``` php
+public fieldableGetFields($options = []);
 
-### public function getAllFieldableFields(): October\Rain\Database\Collection
+$myModel->fieldableGetFields([
+    'useScopes' => true, //Default true.  Use area and action scopes
+    'useGlobalScopes' => true, //Default true.  Use false to withoutGlobalScopes() on the query
+    'useCache' => true, //Default true.  cache query results for duplicate queries
+]);
+```
 
-Returns all model fields, regardless of area, action or enabled status. 
+Returns model fields based on provided $options.
 
 ## Sixgweb\Attributize\Behaviors\FieldsController
 

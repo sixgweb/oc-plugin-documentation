@@ -5,10 +5,10 @@
 The `|field_value` filter returns the model value for the provided field object or field code string.
 
 
-For example, we can `getFieldableFields()` for the current user and retrieve each value.
+For example, we can `fieldableGetFields()` for the current user and retrieve each value.
 ``` twig
 <ul>
-{% for field in user.getFieldableFields() %}
+{% for field in user.fieldableGetFields() %}
     <li>{{ field.name }}: {{ user|field_value(field) }}</li>
 {% endfor %}
 </ul>

@@ -36,7 +36,11 @@ class AddFieldValuesToTable extends Migration
 
         Schema::table('acme_products_products', function ($table) {
             $product = new Product;
-            foreach ($product->getAllFieldableFields() as $field) {
+            foreach ($product->fieldableGetFields([
+                'useScopes' => false,
+                'useGlobalScopes' => false,
+                'useCache' => false
+            ]) as $field) {
                 $field->deleteVirtualColumn();
             }
             if (Schema::hasColumn($table->getTable(), 'field_values')) {

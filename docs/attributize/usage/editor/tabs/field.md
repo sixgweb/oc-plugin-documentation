@@ -30,7 +30,7 @@ In addition the following standard inputs, the Field tab also displays configura
 ![Field Editor](../../images/tab-configuration-dropdown.jpg 'Values')
 - **Empty Option Text**: Text displayed when no option is selected
 - **Use Predefined Values**: Predefined values provided by other plugins or define your own values.  (see [RainLab Location Integration](/attributize/integrations/rainlab-location) for a predefined example)
-- **Values**: Press the Add Values button to define your own dropdown values. 
+- **Values**: Press the New Value button to define your own dropdown values. 
 
 ## File Upload
 ![Field Editor](../../images/tab-configuration-fileupload.jpg 'File Upload')

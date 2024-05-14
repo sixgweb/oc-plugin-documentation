@@ -1,6 +1,6 @@
 # User Conditions Integration
 
-Integrates Conditions with RainLab User plugin. Adds a new User and User group conditioners to the Conditions editor.  Refer to the [Conditions Editor](/conditions/usage/editor.html) for more information on Conditions.
+Integrates Conditions with RainLab User plugin. Adds new User and User Group conditioners to the Conditions editor.  Refer to the [Conditions Editor](/conditions/usage/editor.html) for more information on Conditions.
 
 ## Adding User or User Group Condition
 
@@ -17,7 +17,7 @@ Condition types can only be added once.  Attempting to add the condition type mu
 ![User Group](./images/user-group.jpg)
 
 ### Condition Logic
-The logic used when matching conditions.  **Includes** will match the checked user groups checked.  **Exclude** will match the unchecked user groups.
+The logic used when matching conditions.  **Includes** will match the checked user groups.  **Exclude** will match the unchecked user groups.
 
 ### Nullable
 Include users without a user group in the condition logic.

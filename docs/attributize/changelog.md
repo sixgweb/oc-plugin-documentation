@@ -1,3 +1,11 @@
+# 1.1.3:
+ - Fix sorting on fields list widget
+ - Update deprecated method calls
+# 1.1.2:
+ - Fix lock/unlock icons
+ - Update event listeners
+# 1.1.1:
+ - Support for OCMS 3.6
 # 1.1.0
  - Create FieldValue model and field_values table to store dropdown, checkbox list and radio options and auto-populate on migrate
  - Deprecated events

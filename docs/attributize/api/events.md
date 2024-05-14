@@ -1,6 +1,9 @@
 # Events
 
-## sixgweb.attributize.getFieldableFields <small>(deprecated 1.1.0)</small><br />sixgweb.attributize.fieldable.getFields
+## sixgweb.attributize.fieldable.getFields
+
+~~sixgweb.attributize.getFieldableFields~~ <small>(deprecated 1.1.0)</small>
+
 Provides and opportunity to modify the Field model query
 
 ``` php
@@ -10,13 +13,15 @@ Event::listen('sixgweb.attributize.fieldable.getFields', function (&$fieldQuery)
 });
 ```
 
-## sixgweb.attributize.afterGetFieldableFields <small>(deprecated 1.1.0)</small><br />sixgweb.attributize.fieldable.afterGetFields
+## sixgweb.attributize.fieldable.afterGetFields
+
+~~sixgweb.attributize.afterGetFieldableFields~~ <small>(deprecated 1.1.0)</small>
 
 Provides and opportunity to modify the Field results collection.
 
 ``` php
 //October\Rain\Database\Collection $fields
-Event::listen('sixgweb.attributize.afterGetFieldableFields', function(&$fields) {
+Event::listen('sixgweb.attributize.fieldable.afterGetFields', function(&$fields) {
     $fields = $fields->filter(function ($field) {
         return $field->type == 'text';
     });
@@ -36,22 +41,6 @@ Field::extend(function ($model) {
 });
 ```
 
-## sixgweb.attributize.createPreview
-
-Provides access to the preview Field query and List View filter widget
-
-``` php
-//October\Rain\Database\Builder $fieldQuery
-//Backend\Widgets\Filter $filterWidget
-Event::listen('sixgweb.attributize.createPreview', function($fieldQuery, $filterWidget) {
-    $filterWidget->addScopes([
-        'new_scope' => [
-            'label' => 'New Filter Scope'
-        ]
-    ]);
-});
-```
-
 ## fields.getFieldValues
 
 Fired in the [Fields Component](/attributize/usage/component) and provides access to `$fieldValues` for customization.
@@ -61,7 +50,7 @@ use Sixgweb\Attributize\Components\Fields;
 
 Fields::extend(function ($component) {
     $component->bindEvent('fields.getFieldValues', function (&$fieldValues) use ($component) {
-
     });
 });
 ```
+
