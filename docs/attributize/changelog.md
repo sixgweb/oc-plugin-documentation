@@ -1,3 +1,11 @@
+# 1.1.5:
+  - Check if getController returns null when extending the component class.
+  - Support arrays for getComponentClass method
+# 1.1.4:
+  - Add email type field to list filter
+  - Update css/js
+  - Remove debug return from import/export behavior
+  - Merge model data for backend form  and frontend component when form is refreshed
 # 1.1.3:
  - Fix sorting on fields list widget
  - Update deprecated method calls

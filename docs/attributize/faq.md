@@ -22,3 +22,17 @@ This happens when an existing Field, with model data, is changed to a datetime t
 
 ## Can I Customize Frontend Output?
 Not at this time.  Attributize exposes backend form widgets for frontend use.  All form fields are generated using the same HTML output found in the backend, which is currently Bootstrap 5 markup.
+
+## jQuery and/or Bootstrap Is Not Defined?
+If you are not adding jQuery and Bootstrap via the [Settings](/attributize/settings), ensure jQuery and Bootstrap are loaded before the {% scripts %} placeholder.
+
+``` twig
+<script src="{{ [
+    'assets/vendor/@popperjs/core/dist/umd/popper.min.js',
+    'assets/vendor/bootstrap/dist/js/bootstrap.min.js',
+    'assets/vendor/wowjs/dist/wow.min.js',
+    'assets/js/app.js',
+]|theme }}"></script>
+{% framework extras turbo %}
+{% scripts %}
+```

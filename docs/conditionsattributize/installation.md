@@ -1,5 +1,12 @@
 # Installation
 
+:::tip
+If installed before Sixgweb.Attributize, enter the following to re-run migration scripts
+```
+php artisan plugin:refresh Sixgweb.ConditionsAttributize
+```
+:::
+
 ## Requirements
 - Sixgweb.Attributize
 - Sixgweb.Conditions
