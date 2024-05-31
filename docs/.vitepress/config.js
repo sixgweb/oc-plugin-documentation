@@ -288,6 +288,8 @@ export default {
                         { text: 'Introduction', link: '/attributizeusers/' },
                         { text: 'Installation', link: '/attributizeusers/installation' },
                         { text: 'Settings', link: '/attributizeusers/settings' },
+                        { text: 'Frontend Component', link: '/attributizeusers/component' },
+                        { text: 'Displaying Values', link: '/attributizeusers/displaying' }
                     ]
                 },
             ],

@@ -2,7 +2,7 @@
 
 ![Field Editor](../../images/tab-settings.jpg 'Settings')
 
-- **Code**: Fixed field code for reference.  Access values by field_values[code] or field_values_code
+- **Code**: Fixed field code for reference.  Access values by field_values[code] or by using the [twig filter](/attributize/usage/twigfilter.html)
 - **Enabled**: Enable or disable the field
 - **Show Field Label**: Used as the label for the field, as well as the column header for exports.
 - **Is Searchable**: Include this field when using the list controller search box
