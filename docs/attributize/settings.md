@@ -14,3 +14,8 @@ Checkbox option to add Bootstrap 5 to the frontend.  Not required, if you're the
 
 ### Include Bootstrap Icons
 Checkbox option to add Bootstrap Icons to the frontend.  Not required, if you're theme uses Bootstrap Icons.
+
+## Grid Tab
+
+### Column Breakpoint
+The minimum breakpoint at which fields will stack vertically.  Default: medium  See <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints" target="_blank">Bootstrap Breakpoints</a> for explanation.

@@ -1,3 +1,6 @@
+# 1.1.6:
+  - Add Column Breakpoint setting
+  - Fix twig filter calls on null
 # 1.1.5:
   - Check if getController returns null when extending the component class.
   - Support arrays for getComponentClass method
