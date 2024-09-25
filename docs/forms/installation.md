@@ -3,6 +3,11 @@
 ## Requirements
 - OctoberCMS 3.x
 - [Sixgweb.Attributize](https://octobercms.com/plugin/sixgweb-attributize)
+    - Mysql 5.7+ or Postgres 12+
+    - Bootstrap 5.x (injectable via plugin settings)
+- [Sixgweb.Conditions](https://octobercms.com/plugin/sixgweb-conditions)
+- [Sixgweb.ConditionsAttributize](https://octobercms.com/plugin/sixgweb-conditionsattributize)
+
 - [Sixgweb.Conditions](https://octobercms.com/plugin/sixgweb-conditions)
 - [Sixgweb.ConditionsAttributize](https://octobercms.com/plugin/sixgweb-conditionsattributize)
 
