@@ -405,6 +405,7 @@ export default {
                         { text: 'Introduction', link: '/listsaver/' },
                         { text: 'Installation', link: '/listsaver/installation' },
                         { text: 'Settings', link: '/listsaver/settings' },
+                        { text: 'List Controller', link: '/listsaver/list_controller' },
                         { text: 'Usage', link: '/listsaver/usage' },
                         { text: 'Events', link: '/listsaver/events' },
                     ]
